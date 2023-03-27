@@ -44,7 +44,6 @@ export default function Home() {
       alert(error.message);
     }
   }
-  console.log(result);
 
   const results = result.split('\n');
   elements = results.map(res => <p className={styles.result} key={res}>{res}</p>);
